@@ -1,0 +1,151 @@
+html, body { 
+	overflow: hidden; 
+	height: 100%;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	word-wrap:wrap;
+}
+
+body{
+	margin: 0; 
+	padding: 0;
+}
+
+
+.contenedor{
+	text-align: center;
+}
+
+h1{
+	margin-top: 10%;
+}
+
+p a{
+	text-decoration-line: none;
+	color: white;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+#mostrar_modal{
+	display:inline-block;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-top: 7vh;
+  z-index: 1000;
+}
+
+.img{
+	margin-top: 1.5vh;
+}
+
+.modal:target{
+	display: table;
+}
+
+.modal2{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.modal3{
+	position:relative;
+	margin:auto;
+	animation: slideDown 0.3s ease-in-out;
+}
+
+.modal__close{
+  color:#fff;
+  text-decoration: none;
+  position:absolute;
+  top:-2rem;
+  right:1rem;
+}
+
+@keyframes slideUp{
+  from{
+    opacity:0;
+    bottom: -200px;
+  }
+  to{
+    opacity:1;
+    bottom:0;
+  }
+}
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c1cccc;
+  padding: 50px;
+  font-family: verdana, sans-serif;
+  font-size: 90%;
+}
+
+.menu {
+  position: relative;
+  width: 10em;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.2s ease;
+}
+.menu:before {
+  content: "x";
+  position: absolute;
+  right: 5px;
+  top: 12px;
+}
+.menu li {
+  list-style: none;
+  padding: 0.6em 1em;
+  background-color: #fff;
+}
+.menu a {
+  text-decoration: none;
+  color: #333;
+}
+.menu a:hover {
+  color: #f20256;
+}
+
+.open-hide {
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6001/menu.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25px;
+  text-indent: -9999em;
+  outline: 0;
+}
+.open-hide:hover {
+  cursor: pointer;
+}
+
+.open-hide:focus + .menu {
+  height: 120px;
+  padding-top: 1em;
+}
+*/
+
+
+
+
